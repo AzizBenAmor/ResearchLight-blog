@@ -6,7 +6,33 @@ This project serves as documentation for a blog application created using Larave
 
 ## How to use it Step By Step
 
-First, set up the environment for the project.
+First, clone the project than set up the environment for the project.
+
+```bash
+composer install
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+```bash
+cp .env.example .env
+```
+
+```bash
+php artisan key:generate
+```
+
+now change APP_URL=http://localhost to APP_URL=http://localhost:8000
+
+
+
+
 
 <h3>Step 1: Migrate the Database</h3>
 Migrate the database by running the following command:
