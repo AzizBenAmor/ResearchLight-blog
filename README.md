@@ -6,7 +6,7 @@
 
 This project serves as documentation for a blog application created using Laravel, Voyager for the dashboard, and Laravel UI for user authentication.
 
-## Learning Laravel
+## How to use it Step By Step
 
 First, set up the environment for the project.
 
@@ -19,19 +19,23 @@ php artisan migrate
 
 <h3>Step 2: Populate the Database</h3>
 Populate the database with sample data using the following command:
+
 ```bash
 php artisan db:seed
+
 ```
 
 
 <h3>Step 3: Run Tests</h3>
 Run tests to ensure everything is functioning as expected:
+
 ```bash
 php artisan test
 ```
 
 <h3>Step 4: Create Admin Credentials</h3>
 Create admin credentials to access the dashboard:
+
 ```bash
 php artisan voyager:admin --create
 ```
@@ -39,6 +43,7 @@ php artisan voyager:admin --create
 
 <h3>Step 5: Run the Application</h3>
 Finally, run the application using : 
+
 ```bash
 php artisan serve
 npm run dev
