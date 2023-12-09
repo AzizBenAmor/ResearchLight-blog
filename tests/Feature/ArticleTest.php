@@ -29,7 +29,7 @@ class ArticleTest extends TestCase
             'sub_title'=>'tisub_title sub_title sub_titletlee',
             'content'=>'<p>titlee sub_title sub_title</p>',
             'user_id'=>$user->id,
-            'image'=>'articles\December2023\SDSn2gPMu5qhQzxKnSNe.jpg'
+            'image'=>'articles\December2023\BMD-3398.png'
         ]);
         $response = $this->actingAs($user)->get('/');
         $response->assertSee($article->title);
@@ -54,7 +54,7 @@ class ArticleTest extends TestCase
                   'sub_title'=>'tisub_title sub_title sub_titletlee',
                   'content'=>'<p>titlee sub_title sub_title</p>',
                   'user_id'=>$user->id,
-                  'image'=>'articles\December2023\SDSn2gPMu5qhQzxKnSNe.jpg'
+                  'image'=>'articles\December2023\BMD-3398.png'
               ]);
       $response = $this->actingAs($user)->get("/$article->id/article");
       $response->assertStatus(200);

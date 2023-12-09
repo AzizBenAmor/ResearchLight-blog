@@ -1,7 +1,5 @@
 <h1 align="center">Test Technique Laravel : Application de Blog avec BackOffice Voyager</h1>
 
-
-
 ## About Project
 
 This project serves as documentation for a blog application created using Laravel, Voyager for the dashboard, and Laravel UI for user authentication.
