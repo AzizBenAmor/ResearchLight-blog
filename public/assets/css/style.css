@@ -1,0 +1,312 @@
+main {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 350px;
+  }
+
+  .imageArticule{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.mainImage{
+    width: 750px;
+    height: auto;
+}
+
+.Title {
+    text-align: center;
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Title h1 {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+.Title h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.Title p {
+    padding-top: 35px;
+    font-size: 26px;
+    margin: 0;
+}
+.Title hr {
+    border: none;
+    height: 3px;
+    background-color: #000000; 
+    margin: 40px 0; 
+}
+
+.articleContainer {
+    display: flex;
+    width: 48%; 
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.article {
+    width: 40%; 
+    margin: 1%; 
+    box-sizing: border-box;
+}
+
+.article img {
+    max-width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.articleText {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.articleText h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1265px) {
+    .article {
+        width: 100%; 
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainImage {
+        width: 100%;
+    }
+
+}
+
+.ImageArticuleContainer{
+    margin: 0;
+    display: flex;
+    
+
+}
+
+.articuleImage{
+    width: 100%;
+    height: auto;
+}
+
+.centered-div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+}
+
+.centered-div hr {
+    border: none;
+    height: 3px;
+    background-color: #000000;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100%;
+}
+
+.avatar-container {
+    margin-right: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.user-text {
+    text-align: left;
+    width: 100%;
+}
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 70px;
+    height: auto; 
+}   
+
+.article-content {
+
+    color: #333; 
+    font-size: 1.125rem;
+    text-align: justify; 
+    max-width: 40%; 
+    margin: 0 auto;
+    
+ 
+}
+.content{
+   
+    padding-bottom: 0.75rem; 
+    color: #333; 
+    font-size: 1.125rem; 
+    text-align: justify; 
+    width: 65ch; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shareFBTW{
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 900px) {
+    .shareFBTW img {
+        content: url('./img/twwa.png');
+    }
+}
+.tagsArticule >hr{
+    border-top: 1px dotted #000000; 
+    width: 100%;
+    margin: 20px 0; 
+}
+
+
+.Eyes{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.ThreearticleContainer{
+
+    display: flex;
+    width: 80%; 
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+.articleThree{
+    width: 30%; 
+    margin: 0.3%; 
+    box-sizing: border-box;
+}
+
+.articleThree img {
+    max-width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1500px) {
+    .articleThree {
+        width: 40%; 
+        margin: 0;
+    }
+}
+@media (max-width: 900px) {
+    .articleThree {
+        width: 60%; 
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .articleThree {
+        width: 100%; 
+        margin: 0;
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.AllArticule {
+    text-align: center; 
+    text-align: center;  
+}
+
+.AllArticule >h1 {
+    font-size: 45px;
+}
+
+.newsletter{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 70ch;
+    border: 1px solid black;
+    border-top: 9px solid black;
+    height: 300px;
+    text-align: center;
+}
+
+.newsletter p{
+    font-size: 23px;
+}
+.newsletter h1{
+    font-size: 38px;
+}
+
+.newsletter input{
+    height: 45px;
+    font-size: larger;
+    padding-left: 10px;
+    width: 320px;
+    border: 1px solid black;
+}
+.newsletter input::placeholder {
+    color: black;
+    
+  }
+.newsletter button{
+    position: relative;
+    right: 4px;
+    height: 49px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .newsletter button{
+        top: -1px;
+        width: 90px;
+        font-size: 15px;
+    }
+    .newsletter input{
+        width: 230px;
+    }
+    .centered-div{
+        width: 100%;
+    }
+    .article-content{
+      
+        max-width:100%;
+        margin: 0; 
+    }
+    .content{
+        max-width: 100%;
+        margin: 0; 
+    }
+}
+

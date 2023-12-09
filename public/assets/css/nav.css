@@ -1,0 +1,133 @@
+
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+            @font-face{
+                font-family: Mackay;
+                src:url('C:\laragon\www\Voyager\public\fonts\MackayDEMO-Bold.otf');
+            }
+                .nav {
+                height: 110px;
+                width: 100%;
+                background-color: #ffff;
+                position: relative;
+                border-bottom: 1px solid #ccc;
+                
+                }
+
+                .nav > .nav-header {
+                display: inline;
+                }
+
+                .nav > .nav-header > .nav-title {
+                display: inline-block;
+                font-family: 'Mackay';
+                position: relative;
+                top: 18px;
+                right: -32px;
+                font-size: 45px;
+                color: #000000;
+                padding: 10px 10px 10px 10px;
+                }
+
+                .nav > .nav-btn {
+                display: none;
+                }
+
+                .nav > .nav-links {
+                display: inline;
+                position: relative;
+                right: 35px;
+                top: 29px;
+                float: right;
+                font-size: 18px;
+                }
+
+                .nav > .nav-links > a {
+                font-size: 25px;
+                padding: 13px 20px 13px 10px;
+                font-family: 'IBM Plex Mono', monospace;
+                display: inline-block;
+                text-decoration: none;
+                color: #000000;
+                position: relative; 
+                transition: color 0.3s ease-in; 
+                }
+
+                .nav > .nav-links > a::after {
+                    content: ''; 
+                    position: absolute;
+                    left: 10px;
+                    bottom: -22px; 
+                    width: 0; 
+                    height: 3px;
+                    background-color: #000000; 
+                    transform-origin: bottom right;
+                    transition: width 0.3s ease-in-out; 
+                }
+
+                .nav > .nav-links > a:hover {
+                    color: #000000;
+                }
+
+                .nav > .nav-links > a:hover::after {
+                    width: 70%; 
+                }
+
+                .nav > #nav-check {
+                display: none;
+                }
+
+                .nav > .nav-links > a.active::after {
+                    width: 70%;
+                }
+                @media (max-width:600px) {
+                .nav > .nav-btn {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0px;
+                    top: 30px;
+                }
+                .nav > .nav-btn > label {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                }
+                .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+                .nav > .nav-btn > label > span {
+                    display: block;
+                    width: 25px;
+                    height: 10px;
+                    border-top: 2px solid #000000;
+                }
+                .nav > .nav-links {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    background-color: #ffffff;
+                    height: 0px;
+                    transition: all 0.3s ease-in;
+                    overflow-y: hidden;
+                    top: 50px;
+                    left: 0px;
+                }
+                .nav > .nav-links > a {
+                    display: block;
+                    width: 100%;
+                }
+                
+                .nav > #nav-check:not(:checked) ~ .nav-links {
+                    height: 0px;
+                }
+                .nav > #nav-check:checked ~ .nav-links {
+                    height: calc(100vh - 50px);
+                    overflow-y: auto;
+                }
+                .nav > .nav-links > a::after {
+                display: none;
+                }
+             
+                
+            }
